@@ -44,6 +44,7 @@ Now you can choose between these available languages:
 - Danish (`da`)
 - Dutch (`nl`)
 - English (`en`)
+- Farsi (Persian) (`fa`)
 - French (`fr`)
 - German (`de`)
 - Italian (`it`)
@@ -59,7 +60,6 @@ Now you can choose between these available languages:
 - Thai (`th`)
 - Turkish (`tr`)
 - Ukrainian (`uk`)
-- Farsi (Persian) (`fa`)
 
 Set language in the first parameter of `glowCookies.start('en', { })` method.
 

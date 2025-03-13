@@ -59,6 +59,7 @@ Now you can choose between these available languages:
 - Thai (`th`)
 - Turkish (`tr`)
 - Ukrainian (`uk`)
+- Farsi (Persian) (`fa`)
 
 Set language in the first parameter of `glowCookies.start('en', { })` method.
 

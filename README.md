@@ -2,19 +2,19 @@
 
 ![Badge-glow](https://img.shields.io/badge/GlowCookies-v.3.1.8-blue?style=flat-square) ![jsDelivr hits (GitHub)](https://img.shields.io/jsdelivr/gh/hm/manucaralmo/GlowCookies?style=flat-square) [![GitHub contributors](https://img.shields.io/github/contributors/manucaralmo/GlowCookies?style=flat-square)](https://github.com/AmauriC/tarteaucitron.js/graphs/contributors) ![GitHub Repo stars](https://img.shields.io/github/stars/manucaralmo/GlowCookies?style=social)
 
-# GlowCookies 🍪 - Powerful Cookie Consent Banner In JavaScript
-Simple and full automated cookies banner for any website. Complies with the new European regulations with GlowCookies. Activate and deactivate Google Analytics, Facebook Pixel, Hotjar (and coming soon) cookies whenever the user wishes, with just 1 click.
+# GlowCookies 🍪 - بنر قدرتمند رضایت کوکی در جاوا اسکریپت
+بنر کوکی ساده و کامل خودکار برای هر وب سایت. مطابق با مقررات جدید اروپا با GlowCookies. کوکی های گوگل آنالیتیکس، فیس بوک پیکسل، هاتجار (و به زودی) را هر زمان که کاربر بخواهد، فقط با یک کلیک فعال و غیرفعال کنید.
 
 [![Foo](https://cdn.glowmedia.es/upload/uploads/ed1952btn.svg)](https://manucaralmo.github.io/glow-cookies-web/)
 
-## The cookies banner
+## بنر کوکی ها
 <img src="https://cdn.glowmedia.es/upload/uploads/90c82dbanner.png" data-canonical-src="https://cdn.glowmedia.es/upload/uploads/90c82dbanner.png" width="375" />
 
-## How it works
-You just have to install the code. When the user clicks on accept cookies, the google analytics tracking code, Facebook Pixel and/or Hotjar starts tracking. If the user rejects cookies, the tracking code will not start working.
+## چگونه کار می کند
+فقط باید کد را نصب کنید. هنگامی که کاربر روی پذیرش کوکی ها کلیک می کند، کد رهگیری گوگل آنالیتیکس، فیس بوک پیکسل و/یا هاتجار شروع به ردیابی می کند. اگر کاربر کوکی ها را رد کند، کد رهگیری شروع به کار نخواهد کرد.
 
-## How to use
-Add this code to your html `<head>` or `<body>` tag.
+## نحوه استفاده
+این کد را به تگ `<head>` یا `<body>` خود اضافه کنید.
 ```html
 <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
 <script>
@@ -27,14 +27,14 @@ Add this code to your html `<head>` or `<body>` tag.
 </script>
 ```
 
-## Banner styles
-Now you can choose between these available banner styles:
-- Style `1`, `2` or `3`
+## سبک های بنر
+اکنون می توانید بین این سبک های بنر موجود یکی را انتخاب کنید:
+- سبک `1`, `2` یا `3`
 
-Set style in config object `glowCookies.start('en', { style: 3 })`
+تنظیم سبک در شی پیکربندی `glowCookies.start('en', { style: 3 })`
 
-## Languages
-Now you can choose between these available languages:
+## زبان ها
+اکنون می توانید بین این زبان های موجود یکی را انتخاب کنید:
 - Afrikaans (`af`)
 - Brazilian portugese (`pt_BR`)
 - Bulgarian (`bg`)
@@ -59,57 +59,58 @@ Now you can choose between these available languages:
 - Thai (`th`)
 - Turkish (`tr`)
 - Ukrainian (`uk`)
+- Farsi (فارسی) (`fa`)
 
-Set language in the first parameter of `glowCookies.start('en', { })` method.
+زبان را در پارامتر اول روش `glowCookies.start('en', { })` تنظیم کنید.
 
-## Tracking options
-These are the parameters that you can modify to add your tracking codes or custom scripts.
+## گزینه های ردیابی
+اینها پارامترهایی هستند که می توانید برای اضافه کردن کدهای رهگیری یا اسکریپت های سفارشی خود تغییر دهید.
 
-| Parameter               | Type   | Values                                                                                                              |
+| پارامتر               | نوع   | مقادیر                                                                                                              |
 | ----------------------- | ------ | ------------------------------------------------------------------------------------------------------------------- |
-| `analytics`             | String | Example: `"G-FH87DE17XF"` (Analytics tracking code)                                                                 |
-| `facebookPixel`         | String | Example: `"990955817632355"` (Facebook Pixel code)                                                                  |
-| `HotjarTrackingCode`    | String | Example: `"990955817632355"` (Hotjar tracking code)                                                                 |
-| `customScript` (Inline) | Object | Example: `[{ type: 'custom', position: 'body', content: 'console.log('custom script');' }]`                         |
-| `customScript` (src)    | Object | Example: `[{ type: 'src', position: 'head', content: 'https://www.googletagmanager.com/gtag/js?id=G-FH87DE17XF' }]` |
+| `analytics`             | رشته | نمونه: `"G-FH87DE17XF"` (کد رهگیری گوگل آنالیتیکس)                                                                 |
+| `facebookPixel`         | رشته | نمونه: `"990955817632355"` (کد فیس بوک پیکسل)                                                                  |
+| `HotjarTrackingCode`    | رشته | نمونه: `"990955817632355"` (کد رهگیری هاتجار)                                                                 |
+| `customScript` (Inline) | رشته | نمونه: `[{ type: 'custom', position: 'body', content: 'console.log('custom script');' }]`                         |
+| `customScript` (src)    | رشته | نمونه: `[{ type: 'src', position: 'head', content: 'https://www.googletagmanager.com/gtag/js?id=G-FH87DE17XF' }]` |
 
-## Config Banner
-These are the parameters that you can modify to change certain banner options
+## پیکربندی بنر
+اینها پارامترهایی هستند که می توانید برای تغییر گزینه های بنر خاص تغییر دهید
 
-| Parameter        | Type    | Values                                                                           |
+| پارامتر        | نوع    | مقادیر                                                                           |
 | ---------------- | ------- | -------------------------------------------------------------------------------- |
-| `policyLink`     | String  | Example: `"https://yourlink.com"` (Your cookies policy link)                     |
-| `hideAfterClick` | Boolean | (`true` or `false`) Default: `true` (Hide banner after Accept or Reject cookies) |
+| `policyLink`     | رشته  | نمونه: `"https://yourlink.com"` (پیوند خط مشی کوکی های شما)                     |
+| `hideAfterClick` | بولین | (`true` or `false`) پیشفرض: `true` (پس از پذیرش یا رد کوکی ها، بنر را مخفی کنید) |
 
 
-## Customize Banner
-Now there are certain parameters that you can change to customize your banner.
+## شخصی سازی پنر
+اکنون پارامترهای خاصی وجود دارد که می توانید آنها را تغییر دهید تا بنر خود را سفارشی کنید.
 
-| Parameter             | Type   | Values                                                                                                 |
+| پارامتر             | نوع   | مقادیر                                                                                                 |
 | --------------------- | ------ | ------------------------------------------------------------------------------------------------------ |
-| `border`              | String | (`"border"` or `"none"`) Default: `"border"`                                                           |
-| `position`            | String | (`"left"` or `"right"`) Default: `"left"`                                                              |
-| `bannerDescription`   | String | Example: `"We use our own and third-party cookies to personalize content and to analyze web traffic."` |
-| `bannerLinkText`      | String | Example: `"Read more about cookies"`                                                                   |
-| `bannerBackground`    | String | Example: `"#FAFAFA"` Example: `"lightblue"`                                                            |
-| `bannerColor`         | String | Example: `"#000"` Example: `"blue"`                                                                    |
-| `bannerHeading`       | String | Example: `"Use of cookies"` Default: None                                                              |
-| `acceptBtnText`       | String | Example: `"Accept cookies"`                                                                            |
-| `acceptBtnColor`      | String | Example: `"#000"` Example: `"blue"`                                                                    |
-| `acceptBtnBackground` | String | Example: `"#fff"` Example: `"white"`                                                                   |
-| `rejectBtnText`       | String | Example: `"Reject"`                                                                                    |
-| `rejectBtnBackground` | String | Example: `"#000"` Example: `"blue"`                                                                    |
-| `rejectBtnColor`      | String | Example: `"#fff"` Example: `"white"`                                                                   |
-| `manageColor`         | String | Example: `"#fff"` Example: `"white"`                                                                   |
-| `manageBackground`    | String | Example: `"#f2f2f2"` Example: `"blue"`                                                                 |
-| `manageText`          | String | Example: `"Manage cookies"`                                                                            |
+| `border`              | رشته | (`"border"` or `"none"`) پیشفرض: `"border"`                                                           |
+| `position`            | رشته | (`"left"` or `"right"`) پیشفرض: `"left"`                                                              |
+| `bannerDescription`   | رشته | نمونه: `"We use our own and third-party cookies to personalize content and to analyze web traffic."` |
+| `bannerLinkText`      | رشته | نمونه: `"Read more about cookies"`                                                                   |
+| `bannerBackground`    | رشته | نمونه: `"#FAFAFA"` نمونه: `"lightblue"`                                                            |
+| `bannerColor`         | رشته | نمونه: `"#000"` نمونه: `"blue"`                                                                    |
+| `bannerHeading`       | رشته | نمونه: `"Use of cookies"` پیشفرض: None                                                              |
+| `acceptBtnText`       | رشته | نمونه: `"Accept cookies"`                                                                            |
+| `acceptBtnColor`      | رشته | نمونه: `"#000"` نمونه: `"blue"`                                                                    |
+| `acceptBtnBackground` | رشته | نمونه: `"#fff"` نمونه: `"white"`                                                                   |
+| `rejectBtnText`       | رشته | نمونه: `"Reject"`                                                                                    |
+| `rejectBtnBackground` | رشته | نمونه: `"#000"` نمونه: `"blue"`                                                                    |
+| `rejectBtnColor`      | رشته | نمونه: `"#fff"` نمونه: `"white"`                                                                   |
+| `manageColor`         | رشته | نمونه: `"#fff"` نمونه: `"white"`                                                                   |
+| `manageBackground`    | رشته | نمونه: `"#f2f2f2"` نمونه: `"blue"`                                                                 |
+| `manageText`          | رشته | نمونه: `"Manage cookies"`                                                                            |
 
 
-## Fully customized banner
+## بنر شخصی سازی شده کامل
 ```html
 <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
 <script>
-    glowCookies.start('en', {
+    glowCookies.start('fa', {
         style: 2,
         analytics: 'G-FH87DE17XF',
         facebookPixel: '990955817632355',

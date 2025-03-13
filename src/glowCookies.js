@@ -485,6 +485,14 @@ class LanguagesGC {
         'acceptBtnText': 'Acceptar les Cookies',
         'rejectBtnText': 'Declinar',
         'manageText': 'Cookies'
+      },
+      fa: {
+        'bannerHeading': 'ما از کوکی استفاده میکنیم',
+        'bannerDescription': 'ما از کوکی های خود و شخص ثالث (third-party) برای شخصی سازی محتوا و تجزیه و تحلیل ترافیک وب استفاده می کنیم.',
+        'bannerLinkText': 'درباره کوکی ها بیشتر بخوانید',
+        'acceptBtnText': 'کوکی ها را بپذیرید',
+        'rejectBtnText': 'رد کردن',
+        'manageText': 'مدیریت کوکی ها'
       }
     }
   }

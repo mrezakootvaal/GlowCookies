@@ -138,11 +138,11 @@
 </script>
 ```
 
-## Contribute
-If you know any other language, please help translate.
-- Update the `arrLang` of the `LanguageGC` class in glowCookies.js (Add an entry in this fashion.)
-- Update language documentation in README.md
-- Create a pull request
+## مشارکت
+اگر زبان دیگری بلد هستید در ترجمه کمک کنید.
+- `arrLang` کلاس `LanguageGC` را در فایل glowCookies.js به‌روزرسانی کنید (یک ورودی به این روش اضافه کنید.)
+- به روز رسانی اسناد زبان در README.md
+- یک درخواست pull ایجاد کنید
 ```
 en: {
     'bannerHeading': 'We use cookies',
@@ -153,11 +153,11 @@ en: {
     'manageText' : 'Manage cookies'
 }
 ```
-Thanks for your help! 🎉
+با تشکر از کمک شما! 🎉
 
-## Next steps
-- [ ] Advanced cookies management
-- [ ] Cookie settings
+## قدم های بعدی
+- [ ] مدیریت پیشرفته کوکی ها
+- [ ] تنظیمات کوکی
 
-### Request features
+### درخواست ویژگی ها
 info@glowmedia.es
